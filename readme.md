@@ -1,4 +1,5 @@
-Game Steps: 
+## Game Steps
+
 1. Game SetUp
 2. KeyPress Event Listener
 3. Request Animation Frame
@@ -14,5 +15,6 @@ Game Steps:
 13. UI tweek
 14. Lets Play it
 
+## Build Steps
 1. start screen
 2. Game Area
