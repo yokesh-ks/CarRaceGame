@@ -9,8 +9,17 @@ const keys = {
   ArrowRight: false,
 };
 
+let player = {};
+
+const playGame = () => {
+  console.log("lets Play");
+  player.start && window.requestAnimationFrame(playGame);
+};
+
 const start = () => {
   console.log("start");
+  player.start = true;
+  window.requestAnimationFrame(playGame);
 };
 
 const pressOn = (e) => {
@@ -23,9 +32,8 @@ const pressOff = (e) => {
   console.log(e.key + " is released");
   keys[e.key] = false;
   console.log(keys);
-};  
+};
 
 startScreen.addEventListener("click", start());
 document.addEventListener("keydown", pressOn);
 document.addEventListener("keyup", pressOff);
-
